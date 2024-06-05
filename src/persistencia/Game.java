@@ -26,11 +26,11 @@ public class Game {
 	 * @param player the player
 	 * @param ball   the ball
 	 */
-	private Game(Player player) {
+	private Game(Player player, Score score, Ball ball, Window window) {
 		this.player = player;
-		this.score = new Score();
-		this.ball = new Ball();
-		this.setWindow(new Window());
+		this.score = score;
+		this.ball = ball;
+		this.setWindow(window);
 	}
 
 	/**
@@ -109,7 +109,7 @@ public class Game {
 		
 		Player p = new Player(nombre);
 		
-		Game g = new Game(p);
+		Game g = new Game(p, new Score(), new Ball(), new Window());
 		
 		//Inside the Do-While call every PinballEvents but the actions don't will be executed (random numbers in the methods)
 		do {
