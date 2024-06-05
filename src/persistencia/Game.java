@@ -16,8 +16,8 @@ public class Game {
 	/** The window. */
 	private Window window;
 	
-	/** The Constant IN. */
-	public static final Scanner IN = new Scanner(System.in);
+	/** The Scanner. */
+	public static final Scanner in = new Scanner(System.in);
 
 	/**
 	 * Instantiates a new game.
@@ -105,7 +105,7 @@ public class Game {
 		//Ask for the user's name
 		Utils.write("Introduce el nombre del jugador");
 		
-		String nombre = IN.nextLine();
+		String nombre = in.nextLine();
 		
 		Player p = new Player(nombre);
 		

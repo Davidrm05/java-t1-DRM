@@ -66,7 +66,7 @@ public class PinballEvents {
 					"I will ask you for a number, if you guess it I will give you 100 points but if you fail I keep 100 of your puntos");
 			int correctNumber = Utils.generateRandomNumber(3);
 			Utils.write("The number is between 1 and 3, which do you think");
-			int answer = Game.IN.nextInt();
+			int answer = Game.in.nextInt();
 			if (correctNumber == answer) {
 				Utils.write("Correct answer, 100 points for you!");
 				g.getScore().setScore(g.getScore().getScore() + 100);
